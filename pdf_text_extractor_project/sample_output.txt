@@ -1,0 +1,9 @@
+Shopping List
+- Apples
+- Bananas
+- Oranges
+
+To-Do List
+1. Send Email
+2. Attend Meeting
+3. Write Report
