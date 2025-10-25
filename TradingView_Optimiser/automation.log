@@ -1,0 +1,829 @@
+2025-09-14 18:46:24,353 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 18:46:24,643 - ERROR - Fatal automation error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+<launched> pid=6528
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+  - <launched> pid=6528
+  - [pid=6528] <gracefully close start>
+  - [pid=6528] <kill>
+  - [pid=6528] <will force kill>
+  - [pid=6528] taskkill stderr: ERROR: The process "6528" not found.
+  - [pid=6528] <process did exit: exitCode=21, signal=null>
+  - [pid=6528] starting temporary directories cleanup
+  - [pid=6528] finished temporary directories cleanup
+  - [pid=6528] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 238, in run_all
+    browser_context = p.chromium.launch_persistent_context(user_data_dir, **launch_kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\sync_api\_generated.py", line 14804, in launch_persistent_context
+    self._sync(
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+<launched> pid=6528
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+  - <launched> pid=6528
+  - [pid=6528] <gracefully close start>
+  - [pid=6528] <kill>
+  - [pid=6528] <will force kill>
+  - [pid=6528] taskkill stderr: ERROR: The process "6528" not found.
+  - [pid=6528] <process did exit: exitCode=21, signal=null>
+  - [pid=6528] starting temporary directories cleanup
+  - [pid=6528] finished temporary directories cleanup
+  - [pid=6528] <gracefully close end>
+
+2025-09-14 18:57:30,121 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 18:57:30,675 - ERROR - Fatal automation error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+<launched> pid=15756
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+  - <launched> pid=15756
+  - [pid=15756] <gracefully close start>
+  - [pid=15756] <kill>
+  - [pid=15756] <will force kill>
+  - [pid=15756] taskkill stderr: ERROR: The process "15756" not found.
+  - [pid=15756] <process did exit: exitCode=21, signal=null>
+  - [pid=15756] starting temporary directories cleanup
+  - [pid=15756] finished temporary directories cleanup
+  - [pid=15756] <gracefully close end>
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 238, in run_all
+    browser_context = p.chromium.launch_persistent_context(user_data_dir, **launch_kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\sync_api\_generated.py", line 14804, in launch_persistent_context
+    self._sync(
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+<launched> pid=15756
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --start-maximized --user-data-dir=C:\Users\Admin\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+  - <launched> pid=15756
+  - [pid=15756] <gracefully close start>
+  - [pid=15756] <kill>
+  - [pid=15756] <will force kill>
+  - [pid=15756] taskkill stderr: ERROR: The process "15756" not found.
+  - [pid=15756] <process did exit: exitCode=21, signal=null>
+  - [pid=15756] starting temporary directories cleanup
+  - [pid=15756] finished temporary directories cleanup
+  - [pid=15756] <gracefully close end>
+
+2025-09-14 19:01:01,132 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:01:01,132 - ERROR - Fatal automation error: name 'launch_chrome_with_profile' is not defined
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 273, in run_all
+    browser, browser_context, p, proc = launch_chrome_with_profile(cfg)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'launch_chrome_with_profile' is not defined. Did you mean: 'self.launch_chrome_with_profile'?
+2025-09-14 19:01:21,395 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:01:21,395 - ERROR - Fatal automation error: name 'launch_chrome_with_profile' is not defined
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 273, in run_all
+    browser, browser_context, p, proc = launch_chrome_with_profile(cfg)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'launch_chrome_with_profile' is not defined. Did you mean: 'self.launch_chrome_with_profile'?
+2025-09-14 19:02:15,202 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:02:15,202 - ERROR - Fatal automation error: name 'launch_chrome_with_profile' is not defined
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 275, in run_all
+    browser, browser_context, p, proc = launch_chrome_with_profile(cfg)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'launch_chrome_with_profile' is not defined. Did you mean: 'self.launch_chrome_with_profile'?
+2025-09-14 19:02:34,400 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:02:34,400 - ERROR - Fatal automation error: name 'launch_chrome_with_profile' is not defined
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 275, in run_all
+    browser, browser_context, p, proc = launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'launch_chrome_with_profile' is not defined. Did you mean: 'self.launch_chrome_with_profile'?
+2025-09-14 19:03:11,119 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:03:11,119 - ERROR - Fatal automation error: name 'launch_chrome_with_profile' is not defined
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 275, in run_all
+    browser, browser_context, p, proc = launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'launch_chrome_with_profile' is not defined. Did you mean: 'self.launch_chrome_with_profile'?
+2025-09-14 19:03:21,309 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:03:21,309 - ERROR - Fatal automation error: sequence item 0: expected str instance, NoneType found
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 275, in run_all
+    browser, browser_context, p, proc = self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 213, in launch_chrome_with_profile
+    logger.info(f"Starting Chrome with command: {' '.join(cmd)}")
+                                                 ^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, NoneType found
+2025-09-14 19:05:45,865 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:05:45,865 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=C:/Users/Admin/AppData/Local/Google/Chrome/User Data --start-maximized
+2025-09-14 19:05:45,865 - ERROR - Fatal automation error: name 'subprocess' is not defined
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 274, in run_all
+    browser, browser_context, p, proc = self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 215, in launch_chrome_with_profile
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+           ^^^^^^^^^^
+NameError: name 'subprocess' is not defined. Did you forget to import 'subprocess'
+2025-09-14 19:06:05,439 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:06:05,439 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=C:/Users/Admin/AppData/Local/Google/Chrome/User Data --start-maximized
+2025-09-14 19:06:08,453 - ERROR - Fatal automation error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 275, in run_all
+    browser, browser_context, p, proc = self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 222, in launch_chrome_with_profile
+    playwright = sync_playwright().start()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\sync_api\_context_manager.py", line 84, in start
+    return self.__enter__()
+           ^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\sync_api\_context_manager.py", line 47, in __enter__
+    raise Error(
+playwright._impl._errors.Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2025-09-14 19:06:36,864 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:06:36,864 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=C:/Users/Admin/AppData/Local/Google/Chrome/User Data --start-maximized
+2025-09-14 19:06:39,870 - ERROR - Fatal automation error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 275, in run_all
+    browser, browser_context, p, proc = self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 222, in launch_chrome_with_profile
+    playwright = sync_playwright().start()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\sync_api\_context_manager.py", line 84, in start
+    return self.__enter__()
+           ^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\sync_api\_context_manager.py", line 47, in __enter__
+    raise Error(
+playwright._impl._errors.Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2025-09-14 19:09:30,899 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:09:30,899 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=C:/Users/Admin/AppData/Local/Google/Chrome/User Data --start-maximized
+2025-09-14 19:09:34,977 - ERROR - Fatal automation error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 271, in run_all
+    browser, browser_context, p, proc = await self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 220, in launch_chrome_with_profile
+    browser = await playwright.chromium.connect_over_cdp(f"http://localhost:{port}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14868, in connect_over_cdp
+    await self._impl_obj.connect_over_cdp(
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 207, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+
+2025-09-14 19:09:56,493 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:09:56,495 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=C:/Users/Admin/AppData/Local/Google/Chrome/User Data --start-maximized
+2025-09-14 19:10:00,393 - ERROR - Fatal automation error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 271, in run_all
+    browser, browser_context, p, proc = await self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 220, in launch_chrome_with_profile
+    browser = await playwright.chromium.connect_over_cdp(f"http://localhost:{port}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 14868, in connect_over_cdp
+    await self._impl_obj.connect_over_cdp(
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_type.py", line 207, in connect_over_cdp
+    response = await self._channel.send_return_as_dict(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://localhost:9222
+
+2025-09-14 19:11:34,515 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:11:34,518 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=C:/Users/Admin/AppData/Local/Google/Chrome/User Data --start-maximized
+2025-09-14 19:11:37,523 - ERROR - Chrome process failed to start. Stderr: 
+2025-09-14 19:11:37,523 - ERROR - Fatal automation error: Chrome process failed to start. See log for details.
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 278, in run_all
+    browser, browser_context, p, proc = await self.launch_chrome_with_profile()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 222, in launch_chrome_with_profile
+    raise RuntimeError(f"Chrome process failed to start. See log for details.")
+RuntimeError: Chrome process failed to start. See log for details.
+2025-09-14 19:13:52,443 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:13:52,449 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:13:52,449 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:13:55,455 - INFO - Chrome process started successfully.
+2025-09-14 19:13:56,912 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:13:56,921 - ERROR - Error processing chart i1JydEnn: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:13:56,925 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:13:56,928 - ERROR - Error processing chart CHA5bbpt: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:13:56,931 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:13:56,932 - ERROR - Error processing chart cmri5dQc: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:13:56,935 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:13:56,937 - ERROR - Error processing chart 0Vsz5YJy: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:18,891 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:14:18,891 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:14:18,891 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:14:21,906 - INFO - Chrome process started successfully.
+2025-09-14 19:14:23,363 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:14:23,365 - ERROR - Error processing chart i1JydEnn: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:23,367 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:14:23,371 - ERROR - Error processing chart CHA5bbpt: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:23,371 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:14:23,373 - ERROR - Error processing chart cmri5dQc: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:23,375 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:14:23,378 - ERROR - Error processing chart 0Vsz5YJy: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:44,751 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:14:44,751 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:14:44,751 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:14:47,759 - INFO - Chrome process started successfully.
+2025-09-14 19:14:49,130 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:14:49,130 - ERROR - Error processing chart i1JydEnn: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:49,135 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:14:49,137 - ERROR - Error processing chart CHA5bbpt: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:49,139 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:14:49,141 - ERROR - Error processing chart cmri5dQc: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:14:49,143 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:14:49,145 - ERROR - Error processing chart 0Vsz5YJy: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 304, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:16:34,263 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:16:34,265 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:16:34,265 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:16:37,272 - INFO - Chrome process started successfully.
+2025-09-14 19:16:38,624 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:16:38,712 - ERROR - Error processing chart i1JydEnn: object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 302, in run_all
+    await page.set_default_navigation_timeout(cfg["timeouts"]["page_load"] * 1000)
+TypeError: object NoneType can't be used in 'await' expression
+2025-09-14 19:16:38,746 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:16:38,820 - ERROR - Error processing chart CHA5bbpt: object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 302, in run_all
+    await page.set_default_navigation_timeout(cfg["timeouts"]["page_load"] * 1000)
+TypeError: object NoneType can't be used in 'await' expression
+2025-09-14 19:16:38,847 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:16:38,915 - ERROR - Error processing chart cmri5dQc: object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 302, in run_all
+    await page.set_default_navigation_timeout(cfg["timeouts"]["page_load"] * 1000)
+TypeError: object NoneType can't be used in 'await' expression
+2025-09-14 19:16:38,942 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:16:39,013 - ERROR - Error processing chart 0Vsz5YJy: object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 302, in run_all
+    await page.set_default_navigation_timeout(cfg["timeouts"]["page_load"] * 1000)
+TypeError: object NoneType can't be used in 'await' expression
+2025-09-14 19:18:36,106 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:18:36,106 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:18:36,106 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:18:39,113 - INFO - Chrome process started successfully.
+2025-09-14 19:18:40,317 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:18:46,680 - WARNING - Attempt 1 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:18:51,798 - WARNING - Attempt 2 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:19:01,806 - WARNING - Attempt 3 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:19:21,808 - ERROR - Error processing chart i1JydEnn: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 429, in run_all
+    res = with_retries(
+          ^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return fn(attempt)
+           ^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 430, in <lambda>
+    lambda attempt: asyncio.run(attempt_run(attempt)),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:19:22,012 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:19:29,739 - WARNING - Attempt 1 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:19:34,743 - WARNING - Attempt 2 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:19:44,745 - WARNING - Attempt 3 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:20:04,746 - ERROR - Error processing chart CHA5bbpt: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 429, in run_all
+    res = with_retries(
+          ^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return fn(attempt)
+           ^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 430, in <lambda>
+    lambda attempt: asyncio.run(attempt_run(attempt)),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:20:04,788 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:20:04,800 - ERROR - Error processing chart cmri5dQc: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 301, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:20:04,800 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:20:04,808 - ERROR - Error processing chart 0Vsz5YJy: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 301, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:20:27,170 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:20:27,170 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:20:27,170 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:20:30,180 - INFO - Chrome process started successfully.
+2025-09-14 19:20:31,170 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:20:36,024 - WARNING - Attempt 1 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:20:41,051 - WARNING - Attempt 2 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:20:51,059 - WARNING - Attempt 3 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:21:11,060 - ERROR - Error processing chart i1JydEnn: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 429, in run_all
+    res = with_retries(
+          ^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return fn(attempt)
+           ^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 430, in <lambda>
+    lambda attempt: asyncio.run(attempt_run(attempt)),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:21:11,163 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:21:17,842 - WARNING - Attempt 1 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:21:22,843 - WARNING - Attempt 2 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:21:32,845 - WARNING - Attempt 3 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:21:52,846 - ERROR - Error processing chart CHA5bbpt: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 429, in run_all
+    res = with_retries(
+          ^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return fn(attempt)
+           ^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 430, in <lambda>
+    lambda attempt: asyncio.run(attempt_run(attempt)),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:21:52,918 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:21:56,102 - WARNING - Attempt 1 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:22:01,104 - WARNING - Attempt 2 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:22:11,106 - WARNING - Attempt 3 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:22:31,107 - ERROR - Error processing chart cmri5dQc: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 429, in run_all
+    res = with_retries(
+          ^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return fn(attempt)
+           ^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 430, in <lambda>
+    lambda attempt: asyncio.run(attempt_run(attempt)),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:22:31,166 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:22:32,852 - WARNING - Attempt 1 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:22:37,859 - WARNING - Attempt 2 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:22:47,860 - WARNING - Attempt 3 failed: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:23:07,862 - ERROR - Error processing chart 0Vsz5YJy: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 429, in run_all
+    res = with_retries(
+          ^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return fn(attempt)
+           ^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 430, in <lambda>
+    lambda attempt: asyncio.run(attempt_run(attempt)),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-09-14 19:23:08,121 - INFO - Interrupted by user — stopping.
+2025-09-14 19:23:08,121 - INFO - Stop requested.
+2025-09-14 19:24:29,913 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:24:29,915 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:24:29,915 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:24:32,921 - INFO - Chrome process started successfully.
+2025-09-14 19:24:34,077 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:24:37,820 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 1', attempt 1
+2025-09-14 19:24:37,844 - DEBUG - Watchlist text not found on page — continuing (watchlist selection may already be set).
+2025-09-14 19:24:37,844 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:27:37,913 - WARNING - expect_download timed out — will attempt filesystem fallback.
+2025-09-14 19:27:37,913 - DEBUG - Fallback clicking test button by text (no expect_download).
+2025-09-14 19:27:37,960 - WARNING - Attempt 1 failed: Could not locate test trigger button to click.
+2025-09-14 19:27:42,972 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 1', attempt 2
+2025-09-14 19:27:42,996 - DEBUG - Watchlist text not found on page — continuing (watchlist selection may already be set).
+2025-09-14 19:27:42,996 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:29:17,553 - INFO - Interrupted by user — stopping.
+2025-09-14 19:29:17,553 - INFO - Stop requested.
+2025-09-14 19:29:25,828 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:29:25,828 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:29:25,828 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:29:28,833 - INFO - Chrome process started successfully.
+2025-09-14 19:29:30,091 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:29:33,517 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 1', attempt 1
+2025-09-14 19:29:33,570 - DEBUG - Watchlist text not found on page — continuing (watchlist selection may already be set).
+2025-09-14 19:29:33,572 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:30:16,915 - INFO - Interrupted by user — stopping.
+2025-09-14 19:30:16,917 - INFO - Stop requested.
+2025-09-14 19:33:43,923 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:33:43,925 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:33:43,926 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:33:46,932 - INFO - Chrome process started successfully.
+2025-09-14 19:33:48,283 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:33:52,103 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 1', attempt 1
+2025-09-14 19:33:52,142 - DEBUG - Watchlist text not found on page — continuing (watchlist selection may already be set).
+2025-09-14 19:33:52,142 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:36:52,223 - WARNING - expect_download timed out — will attempt filesystem fallback.
+2025-09-14 19:36:52,223 - DEBUG - Fallback clicking test button by text (no expect_download).
+2025-09-14 19:36:52,273 - WARNING - Could not locate test trigger button to click. Skipping this watchlist.
+2025-09-14 19:36:52,273 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 2', attempt 1
+2025-09-14 19:36:52,299 - DEBUG - Watchlist text not found on page — continuing (watchlist selection may already be set).
+2025-09-14 19:36:52,299 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:36:58,470 - WARNING - Click via Playwright failed: Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "download"
+============================================================; will try fallback.
+2025-09-14 19:36:58,472 - DEBUG - Fallback clicking test button by text (no expect_download).
+2025-09-14 19:36:58,481 - WARNING - Attempt 1 failed: Locator.count: Target page, context or browser has been closed
+2025-09-14 19:40:27,734 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 2', attempt 2
+2025-09-14 19:40:27,734 - DEBUG - Selecting watchlist by text failed: Locator.count: Target page, context or browser has been closed
+2025-09-14 19:40:27,734 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:40:27,744 - WARNING - Click via Playwright failed: Locator.count: Target page, context or browser has been closed; will try fallback.
+2025-09-14 19:40:27,744 - DEBUG - Fallback clicking test button by text (no expect_download).
+2025-09-14 19:40:27,752 - WARNING - Attempt 2 failed: Locator.count: Target page, context or browser has been closed
+2025-09-14 19:48:25,925 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 2', attempt 3
+2025-09-14 19:48:25,932 - DEBUG - Selecting watchlist by text failed: Locator.count: Target page, context or browser has been closed
+2025-09-14 19:48:25,932 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:48:25,941 - WARNING - Click via Playwright failed: Locator.count: Target page, context or browser has been closed; will try fallback.
+2025-09-14 19:48:25,941 - DEBUG - Fallback clicking test button by text (no expect_download).
+2025-09-14 19:48:25,952 - WARNING - Attempt 3 failed: Locator.count: Target page, context or browser has been closed
+2025-09-14 19:48:45,962 - ERROR - Error processing chart i1JydEnn: Locator.count: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 431, in run_all
+    res = await with_retries(
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 140, in with_retries
+    raise last_exc
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 133, in with_retries
+    return await fn(attempt)
+           ^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 397, in attempt_run
+    if await hits.count() > 0:
+       ^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 16711, in count
+    return mapping.from_maybe_impl(await self._impl_obj.count())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_locator.py", line 406, in count
+    return await self._frame._query_count(self._selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_frame.py", line 136, in _query_count
+    return await self._channel.send("queryCount", None, {"selector": selector})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.count: Target page, context or browser has been closed
+2025-09-14 19:48:45,971 - INFO - Opening chart: https://www.tradingview.com/chart/CHA5bbpt/
+2025-09-14 19:48:45,979 - ERROR - Error processing chart CHA5bbpt: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 301, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:48:45,982 - INFO - Opening chart: https://www.tradingview.com/chart/cmri5dQc/
+2025-09-14 19:48:45,986 - ERROR - Error processing chart cmri5dQc: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 301, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:48:45,986 - INFO - Opening chart: https://www.tradingview.com/chart/0Vsz5YJy/
+2025-09-14 19:48:45,995 - ERROR - Error processing chart 0Vsz5YJy: BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\freelacing\TradingView_Optimiser\tv_optimiser_automator.py", line 301, in run_all
+    page = await browser_context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\async_api\_generated.py", line 12793, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\freelacing\venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2025-09-14 19:51:26,746 - INFO - Launching Chrome persistent context with profile: C:/Users/Admin/AppData/Local/Google/Chrome/User Data
+2025-09-14 19:51:26,748 - INFO - Using temporary Chrome profile directory: D:/freelacing/TradingView_Optimiser/results\tv_temp_profile
+2025-09-14 19:51:26,748 - INFO - Starting Chrome with command: C:/Program Files/Google/Chrome/Application/chrome.exe --remote-debugging-port=9222 --user-data-dir=D:/freelacing/TradingView_Optimiser/results\tv_temp_profile --start-maximized
+2025-09-14 19:51:29,754 - INFO - Chrome process started successfully.
+2025-09-14 19:51:30,752 - INFO - Opening chart: https://www.tradingview.com/chart/i1JydEnn/
+2025-09-14 19:51:39,520 - INFO - Chart i1JydEnn: running watchlist 'My Watchlist 1', attempt 1
+2025-09-14 19:51:39,567 - DEBUG - Watchlist text not found on page — continuing (watchlist selection may already be set).
+2025-09-14 19:51:39,567 - DEBUG - Trying test button text: Test Watchlist in Current Parameters
+2025-09-14 19:51:56,085 - INFO - Interrupted by user — stopping.
+2025-09-14 19:51:56,085 - INFO - Stop requested.

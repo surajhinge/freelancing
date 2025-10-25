@@ -1,0 +1,56 @@
+# config.yaml - template for TV Optimiser Automator
+
+# TradingView chart links to process (list of URLs)
+chart_links:
+  - "https://www.tradingview.com/chart/i1JydEnn/"
+  - "https://www.tradingview.com/chart/CHA5bbpt/"
+  - "https://www.tradingview.com/chart/cmri5dQc/"
+  - "https://www.tradingview.com/chart/0Vsz5YJy/"
+
+# Watchlists (exact visible names or labels in TradingView)
+watchlists:
+  - "My Watchlist 1"
+  - "My Watchlist 2"
+
+# Where to place per-chart result folders
+output_dir: "D:/freelacing/TradingView_Optimiser/results"
+
+# Chrome profile (User Data directory). REQUIRED unless using CDP endpoint.
+# Example Windows path: "C:/Users/YourUser/AppData/Local/Google/Chrome/User Data/Default"
+chrome_profile: "C:/Users/Admin/AppData/Local/Google/Chrome/User Data"
+
+# Optional: explicit Chrome executable path (if needed)
+chrome_executable: null
+
+# Fallback downloads directory (used by filesystem fallback)
+downloads_dir: "D:/freelacing/TradingView_Optimiser/Downloads"
+
+# Timeouts in seconds
+timeouts:
+  page_load: 30
+  action: 15
+  download: 180
+
+# Retry policy for each watchlist-run
+retries:
+  max_attempts: 3
+  base_delay: 5
+  backoff_factor: 2
+
+# Run Chrome headless? NOTE: if you rely on extensions or a visible UI injected by the extension, set to false.
+headless: false
+
+# How the script finds the extension button (two methods):
+#  - test_button_text: try to find a visible element containing this exact text (fallback)
+#  - test_button_selector: if your extension injects a custom DOM node, put its CSS selector here (higher priority)
+test_button_text: "Test Watchlist in Current Parameters"
+test_button_selector: null
+
+# Optional: selector or script to select a watchlist; if not provided, the script attempts to click text elements
+watchlist_selector: null
+
+# Optional: instead of launching a new Chrome process (which may conflict with a running Chrome using the same profile),
+# you can connect to an already-running Chrome via the CDP endpoint:
+# Start Chrome with: chrome --remote-debugging-port=9222 --user-data-dir="C:/temp/remote-profile"
+# Then set:
+cdp_endpoint: null

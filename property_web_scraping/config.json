@@ -1,0 +1,9 @@
+{
+  "areas": ["CB1", "CB2", "CB3", "CB4", "CB5", "CB21", "CB22", "CB23", "CB24", "CB25", "CB9", "CB10", "CO10", "IP29"],
+  "modes": ["sale", "rent"],
+  "days_since_added": 14,
+  "max_pages_per_area": 5,
+  "sleep_between_seconds": [2, 5],
+  "output_csv": "properties.csv",
+  "output_xlsx": "properties.xlsx"
+}

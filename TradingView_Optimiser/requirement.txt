@@ -1,0 +1,7 @@
+# python -m venv venv
+# venv\Scripts\activate   # On Windows
+# pip install -r requirements.txt
+# python tv_optimiser_automator.py --config config_template.yaml
+playwright
+PyYAML
+tk
