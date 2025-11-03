@@ -1,0 +1,163 @@
+2025-11-03 21:21:50,960 - INFO - Starting update cycle, reading: ST_calls new.xlsx
+2025-11-03 21:21:50,977 - INFO - Creating Stock_High column
+2025-11-03 21:21:50,977 - INFO - Starting row processing
+2025-11-03 21:21:50,977 - INFO - Processing row 0: SBIN25NOV920CE
+2025-11-03 21:21:50,984 - INFO - Parsed strike info: SBIN 25-NOV-2092 0.0 CE
+2025-11-03 21:21:50,984 - INFO - Processing option: SBIN25NOV920CE
+2025-11-03 21:21:50,984 - INFO - Parsed strike info: SBIN 25-NOV-2092 0.0 CE
+2025-11-03 21:21:50,984 - INFO - Parsed strike info: SBIN 25-NOV-2092 0.0 CE
+2025-11-03 21:21:52,851 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:21:53,984 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:21:56,140 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:21:56,140 - ERROR - Failed to get option chain for SBIN
+2025-11-03 21:21:56,140 - WARNING - Row 0: No valid option high found, keeping existing value
+2025-11-03 21:21:58,183 - INFO - Processing row 1: BAJFINANCE25NOV1120CE
+2025-11-03 21:21:58,183 - INFO - Parsed strike info: BAJFINANCE 25-NOV-2011 20.0 CE
+2025-11-03 21:21:58,183 - INFO - Processing option: BAJFINANCE25NOV1120CE
+2025-11-03 21:21:58,183 - INFO - Parsed strike info: BAJFINANCE 25-NOV-2011 20.0 CE
+2025-11-03 21:21:58,183 - INFO - Parsed strike info: BAJFINANCE 25-NOV-2011 20.0 CE
+2025-11-03 21:22:00,049 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:01,156 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:03,274 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:03,274 - ERROR - Failed to get option chain for BAJFINANCE
+2025-11-03 21:22:03,274 - WARNING - Row 1: No valid option high found, keeping existing value
+2025-11-03 21:22:05,413 - INFO - Processing row 2: PAYTM25NOV1400CE
+2025-11-03 21:22:05,413 - INFO - Parsed strike info: PAYTM 25-NOV-2014 0.0 CE
+2025-11-03 21:22:05,413 - INFO - Processing option: PAYTM25NOV1400CE
+2025-11-03 21:22:05,413 - INFO - Parsed strike info: PAYTM 25-NOV-2014 0.0 CE
+2025-11-03 21:22:05,413 - INFO - Parsed strike info: PAYTM 25-NOV-2014 0.0 CE
+2025-11-03 21:22:07,191 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:08,350 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:10,461 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:10,477 - ERROR - Failed to get option chain for PAYTM
+2025-11-03 21:22:10,478 - WARNING - Row 2: No valid option high found, keeping existing value
+2025-11-03 21:22:12,418 - INFO - Processing row 3: TATASTEEL25NOV185CE
+2025-11-03 21:22:12,420 - INFO - Parsed strike info: TATASTEEL 25-NOV-2018 5.0 CE
+2025-11-03 21:22:12,420 - INFO - Processing option: TATASTEEL25NOV185CE
+2025-11-03 21:22:12,421 - INFO - Parsed strike info: TATASTEEL 25-NOV-2018 5.0 CE
+2025-11-03 21:22:12,421 - INFO - Parsed strike info: TATASTEEL 25-NOV-2018 5.0 CE
+2025-11-03 21:22:13,856 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:15,178 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:17,330 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:17,330 - ERROR - Failed to get option chain for TATASTEEL
+2025-11-03 21:22:17,330 - WARNING - Row 3: No valid option high found, keeping existing value
+2025-11-03 21:22:19,466 - INFO - Processing row 4: COALINDIA25NOV400CE
+2025-11-03 21:22:19,466 - INFO - Parsed strike info: COALINDIA 25-NOV-2040 0.0 CE
+2025-11-03 21:22:19,466 - INFO - Processing option: COALINDIA25NOV400CE
+2025-11-03 21:22:19,466 - INFO - Parsed strike info: COALINDIA 25-NOV-2040 0.0 CE
+2025-11-03 21:22:19,466 - INFO - Parsed strike info: COALINDIA 25-NOV-2040 0.0 CE
+2025-11-03 21:22:21,157 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:22,451 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:24,603 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:24,609 - ERROR - Failed to get option chain for COALINDIA
+2025-11-03 21:22:24,609 - WARNING - Row 4: No valid option high found, keeping existing value
+2025-11-03 21:22:26,802 - INFO - Processing row 5: SBIN25NOV920CE
+2025-11-03 21:22:26,802 - INFO - Parsed strike info: SBIN 25-NOV-2092 0.0 CE
+2025-11-03 21:22:26,802 - INFO - Processing option: SBIN25NOV920CE
+2025-11-03 21:22:26,804 - INFO - Parsed strike info: SBIN 25-NOV-2092 0.0 CE
+2025-11-03 21:22:26,804 - INFO - Parsed strike info: SBIN 25-NOV-2092 0.0 CE
+2025-11-03 21:22:28,395 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:29,523 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:31,671 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:31,671 - ERROR - Failed to get option chain for SBIN
+2025-11-03 21:22:31,671 - WARNING - Row 5: No valid option high found, keeping existing value
+2025-11-03 21:22:33,377 - INFO - Processing row 6: RELIANCE25NOV1470CE
+2025-11-03 21:22:33,377 - INFO - Parsed strike info: RELIANCE 25-NOV-2014 70.0 CE
+2025-11-03 21:22:33,377 - INFO - Processing option: RELIANCE25NOV1470CE
+2025-11-03 21:22:33,377 - INFO - Parsed strike info: RELIANCE 25-NOV-2014 70.0 CE
+2025-11-03 21:22:33,377 - INFO - Parsed strike info: RELIANCE 25-NOV-2014 70.0 CE
+2025-11-03 21:22:34,945 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:36,073 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:38,137 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:38,137 - ERROR - Failed to get option chain for RELIANCE
+2025-11-03 21:22:38,137 - WARNING - Row 6: No valid option high found, keeping existing value
+2025-11-03 21:22:40,250 - INFO - Processing row 7: ASHOKLEY25NOV139CE
+2025-11-03 21:22:40,252 - INFO - Parsed strike info: ASHOKLEY 25-NOV-2013 9.0 CE
+2025-11-03 21:22:40,252 - INFO - Processing option: ASHOKLEY25NOV139CE
+2025-11-03 21:22:40,252 - INFO - Parsed strike info: ASHOKLEY 25-NOV-2013 9.0 CE
+2025-11-03 21:22:40,252 - INFO - Parsed strike info: ASHOKLEY 25-NOV-2013 9.0 CE
+2025-11-03 21:22:42,010 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:43,242 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:45,393 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:45,395 - ERROR - Failed to get option chain for ASHOKLEY
+2025-11-03 21:22:45,395 - WARNING - Row 7: No valid option high found, keeping existing value
+2025-11-03 21:22:47,002 - INFO - Processing row 8: HINDPETRO25NOV475CE
+2025-11-03 21:22:47,002 - INFO - Parsed strike info: HINDPETRO 25-NOV-2047 5.0 CE
+2025-11-03 21:22:47,002 - INFO - Processing option: HINDPETRO25NOV475CE
+2025-11-03 21:22:47,002 - INFO - Parsed strike info: HINDPETRO 25-NOV-2047 5.0 CE
+2025-11-03 21:22:47,002 - INFO - Parsed strike info: HINDPETRO 25-NOV-2047 5.0 CE
+2025-11-03 21:22:48,317 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:49,382 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:51,631 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:51,643 - ERROR - Failed to get option chain for HINDPETRO
+2025-11-03 21:22:51,643 - WARNING - Row 8: No valid option high found, keeping existing value
+2025-11-03 21:22:53,574 - INFO - Processing row 9: IDFCFIRSTB25NOV81CE
+2025-11-03 21:22:53,574 - INFO - Parsed strike info: IDFCFIRSTB 25-NOV-2025 81.0 CE
+2025-11-03 21:22:53,574 - INFO - Processing option: IDFCFIRSTB25NOV81CE
+2025-11-03 21:22:53,574 - INFO - Parsed strike info: IDFCFIRSTB 25-NOV-2025 81.0 CE
+2025-11-03 21:22:53,574 - INFO - Parsed strike info: IDFCFIRSTB 25-NOV-2025 81.0 CE
+2025-11-03 21:22:54,913 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:56,041 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:58,193 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:22:58,193 - ERROR - Failed to get option chain for IDFCFIRSTB
+2025-11-03 21:22:58,193 - WARNING - Row 9: No valid option high found, keeping existing value
+2025-11-03 21:23:00,230 - INFO - Processing row 10: LAURUSLABS25NOV1020CE
+2025-11-03 21:23:00,230 - INFO - Parsed strike info: LAURUSLABS 25-NOV-2010 20.0 CE
+2025-11-03 21:23:00,230 - INFO - Processing option: LAURUSLABS25NOV1020CE
+2025-11-03 21:23:00,230 - INFO - Parsed strike info: LAURUSLABS 25-NOV-2010 20.0 CE
+2025-11-03 21:23:00,230 - INFO - Parsed strike info: LAURUSLABS 25-NOV-2010 20.0 CE
+2025-11-03 21:23:01,568 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:02,694 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:04,850 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:04,852 - ERROR - Failed to get option chain for LAURUSLABS
+2025-11-03 21:23:04,854 - WARNING - Row 10: No valid option high found, keeping existing value
+2025-11-03 21:23:06,690 - INFO - Processing row 11: HINDPETRO25NOV475CE
+2025-11-03 21:23:06,690 - INFO - Parsed strike info: HINDPETRO 25-NOV-2047 5.0 CE
+2025-11-03 21:23:06,691 - INFO - Processing option: HINDPETRO25NOV475CE
+2025-11-03 21:23:06,691 - INFO - Parsed strike info: HINDPETRO 25-NOV-2047 5.0 CE
+2025-11-03 21:23:06,691 - INFO - Parsed strike info: HINDPETRO 25-NOV-2047 5.0 CE
+2025-11-03 21:23:08,017 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:09,142 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:11,299 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:11,299 - ERROR - Failed to get option chain for HINDPETRO
+2025-11-03 21:23:11,299 - WARNING - Row 11: No valid option high found, keeping existing value
+2025-11-03 21:23:13,294 - INFO - Processing row 12: PNBHOUSING25NOV950CE
+2025-11-03 21:23:13,294 - INFO - Parsed strike info: PNBHOUSING 25-NOV-2095 0.0 CE
+2025-11-03 21:23:13,294 - INFO - Processing option: PNBHOUSING25NOV950CE
+2025-11-03 21:23:13,294 - INFO - Parsed strike info: PNBHOUSING 25-NOV-2095 0.0 CE
+2025-11-03 21:23:13,294 - INFO - Parsed strike info: PNBHOUSING 25-NOV-2095 0.0 CE
+2025-11-03 21:23:14,678 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:15,805 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:17,963 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:17,966 - ERROR - Failed to get option chain for PNBHOUSING
+2025-11-03 21:23:17,966 - WARNING - Row 12: No valid option high found, keeping existing value
+2025-11-03 21:23:20,105 - INFO - Processing row 13: AMBUJACEM25NOV560CE
+2025-11-03 21:23:20,105 - INFO - Parsed strike info: AMBUJACEM 25-NOV-2056 0.0 CE
+2025-11-03 21:23:20,105 - INFO - Processing option: AMBUJACEM25NOV560CE
+2025-11-03 21:23:20,105 - INFO - Parsed strike info: AMBUJACEM 25-NOV-2056 0.0 CE
+2025-11-03 21:23:20,105 - INFO - Parsed strike info: AMBUJACEM 25-NOV-2056 0.0 CE
+2025-11-03 21:23:21,661 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:22,763 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:24,911 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:24,915 - ERROR - Failed to get option chain for AMBUJACEM
+2025-11-03 21:23:24,915 - WARNING - Row 13: No valid option high found, keeping existing value
+2025-11-03 21:23:26,929 - INFO - Processing row 14: AMBUJACEM
+2025-11-03 21:23:26,929 - ERROR - Invalid strike name format: AMBUJACEM
+2025-11-03 21:23:26,929 - ERROR - Row 14: Failed to parse strike name AMBUJACEM
+2025-11-03 21:23:26,929 - INFO - Processing row 15: HINDPETRO25NOV490CE
+2025-11-03 21:23:26,929 - INFO - Parsed strike info: HINDPETRO 25-NOV-2049 0.0 CE
+2025-11-03 21:23:26,929 - INFO - Processing option: HINDPETRO25NOV490CE
+2025-11-03 21:23:26,929 - INFO - Parsed strike info: HINDPETRO 25-NOV-2049 0.0 CE
+2025-11-03 21:23:26,929 - INFO - Parsed strike info: HINDPETRO 25-NOV-2049 0.0 CE
+2025-11-03 21:23:28,401 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:29,518 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:31,677 - ERROR - Request failed after 3 retries: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:31,678 - ERROR - Failed to get option chain for HINDPETRO
+2025-11-03 21:23:31,678 - WARNING - Row 15: No valid option high found, keeping existing value
+2025-11-03 21:23:33,391 - INFO - Processing row 16: INDHOTEL25NOV760CE
+2025-11-03 21:23:33,391 - INFO - Parsed strike info: INDHOTEL 25-NOV-2076 0.0 CE
+2025-11-03 21:23:33,391 - INFO - Processing option: INDHOTEL25NOV760CE
+2025-11-03 21:23:33,391 - INFO - Parsed strike info: INDHOTEL 25-NOV-2076 0.0 CE
+2025-11-03 21:23:33,391 - INFO - Parsed strike info: INDHOTEL 25-NOV-2076 0.0 CE
+2025-11-03 21:23:34,943 - WARNING - Request attempt 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-11-03 21:23:36,032 - WARNING - Request attempt 2 failed: Expecting value: line 1 column 1 (char 0)
