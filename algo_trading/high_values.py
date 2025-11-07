@@ -2,9 +2,9 @@ import pandas as pd
 import requests
 from datetime import datetime
 
-excel_path = "Filtered_Instruments_test.xlsx"
-output_excel = "Updated_demo_High_Values_min_test_final.xlsx"
-log_file = "api_url_log_test_min_final.txt"
+excel_path = "Instruments.xlsx"
+output_excel = "Updated_Instruments.xlsx"
+log_file = "log.txt"
 
 base_url = 'https://api.upstox.com/v3/historical-candle/{instrument_key}/minutes/1/{date}/{date}'
 
